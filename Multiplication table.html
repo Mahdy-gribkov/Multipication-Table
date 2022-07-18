@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+  <head>
+    <title>Multiplication table</title>
+  </head>
+  <body>
+    <script>
+      var result = "x ";
+      for (var i = 0; i < 11; i++) {
+        for (var a = 0; a < 11; a++) {
+          if (i == 0 && a > 0) {
+            result += "[" + a + "]";
+          } else if (a == 0 && i > 0) {
+            result += "[" + i + "] ";
+          } else if (i > 0 && a > 0) {
+            result += i * a + " ";
+          }
+        }
+        result += "\n";
+      }
+      console.log(result);
+    </script>
+  </body>
+</html>
